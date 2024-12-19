@@ -1,0 +1,756 @@
+[
+  {
+    'eventid': 4422572,
+    'date': {
+      'year': 2072,
+      'month': 10,
+      'day': 10
+    },
+    'location': {
+      'country': 'United States',
+      'city': 'New York City',
+      'region': None,
+      'latitude': None,
+      'longitude': None
+    },
+    'target': {
+      'target_type': None,
+      'target1_name': None,
+      'target_nationality': None
+    },
+    'groups': [
+      'Black September',
+      None
+    ],
+    'attack': {
+      'num_terrorists': None,
+      'attack_type': 'Explosives'
+    },
+    'result': {
+      'num_spread': 0,
+      'num_kille': 0},
+    'description': 'UNITEDSTATES.TwooftheMalaysian-postmarkedletterbombsweredeliveredtotwoNewYorkwomenactiveinAmericanZionistcircles.Theyopenedtheenvelopes,butthebombsdidnotexplode.TheBSOclaimedresponsibility.'},
+  {'eventid': 9529082, '
+      date
+      ': {'
+      year
+      ': 2072, '
+      month
+      ': 10, '
+      day
+      ': 10}, '
+      location
+      ': {'
+      country
+      ': '
+      United
+      States
+      ', '
+      city
+      ': '
+      New
+      York
+      City
+      ', '
+      region
+      ': None, '
+      latitude
+      ': None, '
+      longitude
+      ': None}, '
+      t
+      arget
+      ': {'
+      target_type
+      ': None, '
+      target1_name
+      ': None, '
+      target_nationality
+      ': None}, '
+      groups
+      ': ['
+      Black
+      September
+      ', None], '
+      attack
+      ': {'
+      num_terrorists
+      ': None, '
+      attack_type
+      ': '
+      Explosives
+      '}, '
+      result
+      ': {'
+      num_spread
+      ': 0, '
+      num_killed
+      ':
+      0
+    },
+    'description': 'UNITED STATES.  Two of the Malaysian-postmarked letter bombs were delivered to two New York women active in American Zionist circles.  They opened the envelopes, but the bombs did not explode. The BSO clai
+    med
+    responsibility.
+    '}, {'
+    eventid
+    ': 8442997, '
+    date
+    ': {'
+    year
+    ': 2072, '
+    month
+    ': 10, '
+    day
+    ': 10}, '
+    location
+    ': {'
+    country
+    ': '
+    Chile
+    ', '
+    city
+    ': '
+    Chillan
+    ', '
+    region
+    ': None, '
+    latitude
+    ': None, '
+    longitude
+    ': None}, '
+    target
+    ': {'
+    target_type
+    ': N
+    one,
+    'target1_name': None,
+    'target_nationality': None
+  },
+  'groups'
+  :
+  [
+    'Other',
+    None
+  ],
+  'attack'
+  :
+  {
+    'num_terrorists': None,
+    'attack_type': 'Fire or Firebomb'
+  },
+  'result'
+  :
+  {
+    'num_spread': 0,
+    'num_killed': 0
+  },
+  'description'
+  :
+  'CHILE.  T
+  he
+  USIS
+  Binational
+  Center
+  in
+  Chillan
+  was
+  attacked
+  by
+  leftists
+  who
+  broke
+  windows
+  and
+  hurled
+  a
+  Molotov
+  cocktail.
+  '}, {'
+  eventid
+  ': 6216651, '
+  date
+  ': {'
+  year
+  ': 2072, '
+  month
+  ': 10, '
+  day
+  ': 14}, '
+  location
+  ': {'
+  country
+  ': '
+  United
+  States
+  ', '
+  city
+  ': '
+  New
+  York
+  City
+  ', '
+  region
+  ': None, '
+  latitude
+  ': None, '
+  longitude
+  ': None}, '
+  target
+  ': {'
+  target_type
+  ': None, '
+  target1_name
+  ': None, '
+  target_nationality
+  ': None}, '
+  groups
+  ': ['
+  Black
+  September
+  ', None], '
+  attack
+  ': {'
+  num_terrorists
+  '
+  :
+  None,
+  'attack_type'
+  :
+  'Explosives'
+  },
+  'result'
+  :
+  {
+    'num_spread': 1,
+    'num_killed': 0
+  },
+  'description'
+  :
+  "UNITED STATES.  A clerk in a New York City post office was seriously injured when a letter bomb exploded.  The letter, anothe
+  r
+  of
+  the
+  Malaysian
+  postmarked
+  series,
+  was
+  addressed
+  to
+  a
+  former
+  national
+  officer
+  of
+  Hadassah,
+  the
+  women
+  's Zionist organization.The BSO claimed responsibility."}, {'
+  eventid
+  ': 4010169, '
+  date
+  ': {'
+  year
+  ': 2072, '
+  month
+  ': 10, '
+  day
+  ':
+  16
+  },
+  'location'
+  :
+  {
+    'country': 'Argentina',
+    'city': 'Buenos Aires',
+    'region': None,
+    'latitude': None,
+    'longitude': None
+  },
+  'target'
+  :
+  {
+    'target_type': None,
+    'target1_name': None,
+    'target_nationality': None
+  },
+  'groups'
+  :
+  [
+    'Unknown',
+    None
+  ],
+  'attack'
+  :
+  {
+    'num_terrorists': None,
+    'attack_type': 'Explosives'
+  },
+  'result'
+  :
+  {
+    'num_spread': 0,
+    'num_killed': 1
+  },
+  'description'
+  :
+  'ARGENTINA.  Supporters of Juan Peron planted a bomb that exploded in the Sheraton Hotel in
+  Buenos
+  Aires,
+  killing
+  a
+  Canadian
+  tourist.
+  '}, {'
+  eventid
+  ': 7095042, '
+  date
+  ': {'
+  year
+  ': 2072, '
+  month
+  ': 10, '
+  day
+  ': 16}, '
+  location
+  ': {'
+  country
+  ': '
+  Italy
+  ', '
+  city
+  ': '
+  Rome
+  ', '
+  region
+  ': None, '
+  latitude
+  ': None, '
+  longitude
+  ': None}, '
+  target
+  ': {'
+  target_type
+  ': None, '
+  target1_name
+  ': None, '
+  target_nationality
+  ': None}, '
+  groups
+  ': ['
+  Unknown
+  ', None], '
+  attack
+  ': {'
+  num_terrorists
+  ': None, '
+  attack_type
+  ': '
+  Firearms
+  '}, '
+  result
+  ': {'
+  num_spread
+  ': 0, '
+  num_killed
+  ': 1}, '
+  descriptio
+  n
+  ': '
+  ITALY.
+  Awel
+  Abdel
+  Zwaiter,
+  a
+  Palestinian
+  who
+  had
+  lived
+  in
+  Rome
+  for
+  16
+  years
+  and
+  was
+  employed
+  as
+  a
+  translator
+  by
+  the
+  Libyan
+  embassy,
+  was
+  killed
+  by
+  12
+  bullets
+  to
+  the
+  head.
+  The
+  assailants
+  were
+  never
+  caught.
+  Intelligence
+  s
+  ources
+  indicate
+  that
+  Zwaiter
+  was
+  responsible
+  for
+  a
+  bomb
+  that
+  exploded
+  in
+  the
+  luggage
+  compartment
+  of
+  an
+  El
+  Al
+  flight
+  from
+  Rome
+  in
+  August
+  1972
+  and
+  was
+  regarded
+  as
+  head
+  of
+  Black
+  September
+  in
+  Italy.
+  '}, {'
+  eventid
+  ': 2874085, '
+  date
+  '
+  :
+  {
+    'year': 2072,
+    'month': 10,
+    'day': 22
+  },
+  'location'
+  :
+  {
+    'country': 'Turkey',
+    'city': nan,
+    'region': None,
+    'latitude': None,
+    'longitude': None
+  },
+  'target'
+  :
+  {
+    'target_type': None,
+    'target1_name': None,
+    'target_nationality': None
+  },
+  'groups'
+  :
+  [
+    'Unknown',
+    None
+  ],
+  'attack'
+  :
+  {
+    'num_terrorists': None,
+    'attack_type': 'Explosives'
+  },
+  'result'
+  :
+  {
+    'num_spread': 0,
+    'num_killed': 0
+  },
+  'description'
+  :
+  'TURKEY.  Four men hijacked a Turkish airliner to Bulgaria and threat
+  ened
+  to
+  blow
+  up
+  the
+  plane
+  and
+  its
+  69
+  passengers
+  if
+  Turkey
+  did
+  not
+  release
+  12
+  terrorist
+  prisoners,
+  restore
+  the
+  right
+  of
+  workers
+  to
+  strike,
+  and
+  reorganize
+  the
+  universities.
+  The
+  four
+  hijackers
+  surrendered
+  to
+  Bulgarian
+  authoriti
+  es
+  on
+  October
+  23,
+  after
+  Turkey
+  refused
+  to
+  meet
+  their
+  demands.
+  '}, {'
+  eventid
+  ': 1925164, '
+  date
+  ': {'
+  year
+  ': 2072, '
+  month
+  ': 10, '
+  day
+  ': 25}, '
+  location
+  ': {'
+  country
+  ': '
+  Libya
+  ', '
+  city
+  ': nan, '
+  region
+  ': None, '
+  latitude
+  ': None, '
+  longitude
+  '
+  :
+  None
+  },
+  'target'
+  :
+  {
+    'target_type': None,
+    'target1_name': None,
+    'target_nationality': None
+  },
+  'groups'
+  :
+  [
+    'Unknown',
+    None
+  ],
+  'attack'
+  :
+  {
+    'num_terrorists': None,
+    'attack_type': 'Explosives'
+  },
+  'result'
+  :
+  {
+    'num_spread': 3,
+    'num_killed
+    ': 0}, '
+    description
+    ': '
+    LIBYA.
+    Mustafa
+    Awad
+    Abu
+    Zeid,
+    PLO
+    secretary
+    was
+    blinded
+    by
+    a
+    parcel
+    bomb
+    which
+    caused
+    less
+    serious
+    injuries
+    to
+    two
+    other
+    people.
+    '}, {'
+    eventid
+    ': 537590, '
+    date
+    ': {'
+    year
+    ': 2072, '
+    month
+    ': 10, '
+    day
+    ': 25},
+    'location': {
+      'country': 'Israel',
+      'city': 'Kiryat Shmona',
+      'region': None,
+      'latitude': None,
+      'longitude': None
+    },
+    'target': {
+      'target_type': None,
+      'target1_name': None,
+      'target_nationality': None
+    },
+    'groups': [
+      'Black September',
+      None
+    ],
+    'attack': {
+      'num_terrorists': None,
+      'attack_type': 'Explosives'
+    },
+    'result': {
+      'num_spread': 0,
+      'num_killed': 0
+    },
+    'description': 'ISRAEL.  Police intercepted letter-bombs mailed in Israel and addressed to President Richa
+    rd
+    Nixon,
+    Secretary
+    of
+    Defense
+    Melvin
+    Laird,
+    and
+    Secretary
+    of
+    State
+    William
+    Rogers.
+    The
+    letters
+    were
+    mailed
+    by
+    Black
+    September
+    from
+    Kiryat
+    Shmona.
+    Suspicious
+    Israeli
+    postal
+    workers
+    intercepted
+    the
+    bombs.
+    '}, {'
+    eventid
+    ': 2506
+    12,
+    'date': {
+      'year': 2072,
+      'month': 10,
+      'day': 25
+    },
+    'location': {
+      'country': 'Israel',
+      'city': 'Kiryat Shmona',
+      'region': None,
+      'latitude': None,
+      'longitude': None
+    },
+    'target': {
+      'target_type': None,
+      'target1_name': None,
+      'targe
+      t_nationality
+      ': None}, '
+      groups
+      ': ['
+      Black
+      September
+      ', None], '
+      attack
+      ': {'
+      num_terrorists
+      ': None, '
+      attack_type
+      ': '
+      Explosives
+      '}, '
+      result
+      ': {'
+      num_spread
+      ': 0, '
+      num_killed
+      ': 0}, '
+      description
+      ': '
+      ISRAEL.
+      Police
+      intercepted
+      letter-bom
+      bs
+      mailed
+      in
+      Israel
+      and
+      addressed
+      to
+      President
+      Richard
+      Nixon,
+      Secretary
+      of
+      Defense
+      Melvin
+      Laird,
+      and
+      Secretary
+      of
+      State
+      William
+      Rogers.
+      The
+      letters
+      were
+      mailed
+      by
+      Black
+      September
+      from
+      Kiryat
+      Shmona.
+      Suspicious
+      Israeli
+      postal
+      workers
+      intercepted
+      the
+      bombs.
+      '}]

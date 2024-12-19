@@ -4,8 +4,7 @@ import os
 import faust
 from dotenv import load_dotenv
 
-from app.streaming_data import process_neo4j
-from streaming_data import  process
+from streaming_data import process_neo4j, process_mongo, process_elastic
 
 load_dotenv(verbose=True)
 
@@ -15,26 +14,49 @@ app = faust.App(
     value_serializer='json'
 )
 
-@app.agent(app.topic(os.getenv("TOPIC_PROCESS")))
-async def send_to_dbs(messages):
+data1 = app.topic(os.getenv("TOPIC_PROCESS1"))
+data2 = app.topic(os.getenv("TOPIC_PROCESS2"))
+
+topic_mongo = app.topic(os.getenv("TOPIC_CONSUME_MONGO"))
+topic_neo4j_target = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_TARGET"))
+topic_neo4j_attack = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_ATTACK"))
+topic_neo4j_group = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_GROUP"))
+topic_neo4j_region = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_LOCATION"))
+topic_neo4j_event = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_EVENT"))
+topic_elastic = app.topic(os.getenv("TOPIC_CONSUME_ELASTIC"))
+
+
+
+
+@app.agent(data1)
+async def send1_to_dbs(messages):
+    await send(messages)
+
+@app.agent(data2)
+async def send2_to_dbs(messages):
+    await send(messages)
+
+async def send(messages):
     async for message in messages:
-        print(type(message))
-        topic_mongo = app.topic(os.getenv("TOPIC_CONSUME_MONGO"))
-        topic_neo4j_target = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_TARGET"))
-        topic_neo4j_attack = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_ATTACK"))
-        topic_neo4j_group = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_GROUP"))
-        topic_neo4j_region = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_LOCATION"))
-        topic_neo4j_event = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_EVENT"))
         processed = process_neo4j(message)
         try:
             tasks = [
-                topic_mongo.send(value=process(message)),
-                topic_neo4j_target.send(value=processed.get("target")),
-                topic_neo4j_attack.send(value=processed.get("attack")),
-                topic_neo4j_group.send(value=processed.get("group")),
+                topic_mongo.send(value=process_mongo(message)),
+                topic_elastic.send(value=process_elastic(message)),
+                topic_neo4j_target.send(value=processed.get("target_type")),
+                topic_neo4j_attack.send(value=processed.get("attack_type")),
+                topic_neo4j_group.send(value=processed.get("groups")),
                 topic_neo4j_region.send(value=processed.get("location")),
                 topic_neo4j_event.send(value=processed.get("event"))
             ]
             await asyncio.gather(*tasks)
         except Exception as e:
             print(e)
+
+
+
+
+
+
+
+
