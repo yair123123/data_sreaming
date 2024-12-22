@@ -1,7 +1,9 @@
 import asyncio
 import os
+from typing import Dict
 
 import faust
+import pandas as pd
 from dotenv import load_dotenv
 
 from streaming_data import process_neo4j, process_mongo, process_elastic
@@ -38,7 +40,9 @@ async def send2_to_dbs(messages):
 
 async def send(messages):
     async for message in messages:
-        processed = process_neo4j(message)
+        message = pd.DataFrame(message)
+        processed:Dict[str,str] = process_neo4j(message)
+        print(processed.keys())
         try:
             tasks = [
                 topic_mongo.send(value=process_mongo(message)),
@@ -46,8 +50,8 @@ async def send(messages):
                 topic_neo4j_target.send(value=processed.get("target_type")),
                 topic_neo4j_attack.send(value=processed.get("attack_type")),
                 topic_neo4j_group.send(value=processed.get("groups")),
-                topic_neo4j_region.send(value=processed.get("location")),
-                topic_neo4j_event.send(value=processed.get("event"))
+                topic_neo4j_region.send(value=processed.get("locations")),
+                topic_neo4j_event.send(value=processed.get("events"))
             ]
             await asyncio.gather(*tasks)
         except Exception as e:
