@@ -18,6 +18,7 @@ app = faust.App(
 
 data1 = app.topic(os.getenv("TOPIC_PROCESS1"))
 data2 = app.topic(os.getenv("TOPIC_PROCESS2"))
+data3 = app.topic(os.getenv("TOPIC_PROCESS_API"))
 
 topic_mongo = app.topic(os.getenv("TOPIC_CONSUME_MONGO"))
 topic_neo4j_target = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_TARGET"))
@@ -28,20 +29,25 @@ topic_neo4j_event = app.topic(os.getenv("TOPIC_CONSUME_NEO4J_EVENT"))
 topic_elastic = app.topic(os.getenv("TOPIC_CONSUME_ELASTIC"))
 
 
-
-
 @app.agent(data1)
 async def send1_to_dbs(messages):
     await send(messages)
+
 
 @app.agent(data2)
 async def send2_to_dbs(messages):
     await send(messages)
 
+
+@app.agent(data3)
+async def send3_to_dbs(messages):
+    await send(messages)
+
+
 async def send(messages):
     async for message in messages:
         message = pd.DataFrame(message)
-        processed:Dict[str,str] = process_neo4j(message)
+        processed: Dict[str, str] = process_neo4j(message)
         print(processed.keys())
         try:
             tasks = [
@@ -56,11 +62,3 @@ async def send(messages):
             await asyncio.gather(*tasks)
         except Exception as e:
             print(e)
-
-
-
-
-
-
-
-

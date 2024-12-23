@@ -6,11 +6,13 @@ import pandas as pd
 import toolz as t
 from pandas import DataFrame
 import math
+from geopy import Nominatim
 
 def check_group(group):
     if group is None or group in ["NaN", "nan", "Unknown", "unknown"] or (isinstance(group, float) and math.isnan(group)):
         return None
     return group
+
 
 
 def convert_all_groups(df):
